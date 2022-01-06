@@ -1,4 +1,4 @@
-package main_package.utils;
+package edit_distance.utils;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

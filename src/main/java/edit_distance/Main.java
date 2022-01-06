@@ -1,16 +1,14 @@
-package main_package;
+package edit_distance;
 
 import benchmark.Benchmark;
-import main_package.deprecated.DeprecatedFunctionsForEditDistanceComputation;
-import main_package.entities.EditDistanceCalculator;
+import edit_distance.entities.EditDistanceCalculator;
 
 import java.util.LinkedHashMap;
 
 /**
  * Main class with example of use of {@link EditDistanceCalculator}.
  */
-@SuppressWarnings("deprecation")
-public class Main {
+class Main {
 
     /**
      * Sample term.
@@ -50,22 +48,6 @@ public class Main {
                     System.out.println(editDistanceInstance.getCostMatrixToString());
                 });
 
-    }
-
-    /**
-     * Benchmark for the first version of the program.
-     */
-    @Benchmark
-    private static void firstVersionOfEditDistance() {
-        DeprecatedFunctionsForEditDistanceComputation.computeEditDistanceFirstVersion(SAMPLE_TERM_1.toCharArray(), SAMPLE_TERM_2.toCharArray());
-    }
-
-    /**
-     * Benchmark for the first version of the program.
-     */
-    @Benchmark
-    private static void secondVersionOfEditDistance() {
-        DeprecatedFunctionsForEditDistanceComputation.computeEditDistance(SAMPLE_TERM_1.toCharArray(), SAMPLE_TERM_2.toCharArray());
     }
 
     /**
