@@ -1,6 +1,6 @@
-package main_package.entities;
+package edit_distance.entities;
 
-import main_package.utils.MatricesUtility;
+import edit_distance.utils.MatricesUtility;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

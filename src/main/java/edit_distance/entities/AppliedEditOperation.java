@@ -1,4 +1,4 @@
-package main_package.entities;
+package edit_distance.entities;
 
 import org.jetbrains.annotations.NotNull;
 
