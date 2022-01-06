@@ -1,4 +1,4 @@
-package main_package.utils;
+package edit_distance.utils;
 
 import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Test;

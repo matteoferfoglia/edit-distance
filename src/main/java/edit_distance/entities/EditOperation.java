@@ -1,4 +1,4 @@
-package main_package.entities;
+package edit_distance.entities;
 
 /**
  * Each value of this enum represents an edit operation with its associated cost.
