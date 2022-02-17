@@ -1,7 +1,6 @@
 package edit_distance.entities;
 
 import org.jetbrains.annotations.NotNull;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -24,10 +23,6 @@ class EditDistanceCalculatorTest {
     @BeforeEach
     void setUp() {
         editDistanceCalculator = new EditDistanceCalculator(SAMPLE_WORD_1, SAMPLE_WORD_2);
-    }
-
-    @AfterEach
-    void tearDown() {
     }
 
     @Test

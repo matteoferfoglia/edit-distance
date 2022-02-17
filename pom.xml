@@ -6,7 +6,7 @@
 
     <groupId>main_package</groupId>
     <artifactId>edit-distance</artifactId>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
 
     <name>Edit distance</name>
     <description>

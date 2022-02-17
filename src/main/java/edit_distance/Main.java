@@ -54,7 +54,7 @@ class Main {
      * Benchmark for the first version of the program.
      */
     @Benchmark
-    private static void thirdVersionOfEditDistanceWithClass() {
+    private static void editDistanceBenchmark() {
         //noinspection ResultOfMethodCallIgnored
         new EditDistanceCalculator(SAMPLE_TERM_1, SAMPLE_TERM_2).getEditDistance();
     }

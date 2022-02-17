@@ -48,7 +48,7 @@ such that at end *z* is equal to *y*.
 
 ### From [CLRS, "Edit distance"](https://walkccc.me/CLRS/Chap15/Problems/15-5/):
 
-> In order to transform one source string of text *x[1..m]* to a target string *y[1..n]*, we can perform various transformation operations. Our goal is, given *x* and *y*, to produce a series of transformations that change *x* to *y*. We use an array *z*—assumed to be large enough to hold all the characters it will need—to hold the intermediate results. Initially, *z* is empty, and at termination, we should have *z[j] = y[j]* for *j = 1, 2, \ldots, n*. We maintain current indices *i* into *x* and *j* into *z*, and the operations are allowed to alter *z* and these indices. Initially, *i = j = 1*. We are required to examine every character in *x* during the transformation, which means that at the end of the sequence of transformation operations, we must have *i = m + 1*.
+> In order to transform one source string of text *x[1..m]* to a target string *y[1..n]*, we can perform various transformation operations. Our goal is, given *x* and *y*, to produce a series of transformations that change *x* to *y*. We use an array *z*—assumed to be large enough to hold all the characters it will need—to hold the intermediate results. Initially, *z* is empty, and at termination, we should have *z[j] = y[j]* for *j = 1, 2, ..., n*. We maintain current indices *i* into *x* and *j* into *z*, and the operations are allowed to alter *z* and these indices. Initially, *i = j = 1*. We are required to examine every character in *x* during the transformation, which means that at the end of the sequence of transformation operations, we must have *i = m + 1*.
 >
 > We may choose from among six transformation operations:
 > - **Copy** a character from *x* to *z* by setting *z[j] = x[i]* and then incrementing both *i* and *j*. This operation examines *x[i]*.
@@ -67,7 +67,7 @@ such that at end *z* is equal to *y*.
 > Each of the transformation operations has an associated cost. The cost of an operation depends on the specific application, but we assume that each operation's cost is a constant that is known to us. We also assume that the individual costs of the copy and replace operations are less than the combined costs of the delete and insert operations; otherwise, the copy and replace operations would not be used. The cost of a given sequence of transformation operations is the sum of the costs of the individual operations in the sequence.
 >
 *[...]*
-> Given two sequences *x[1..m]* and *y[1..n]* and set of transformation-operation costs, the **_edit distance_** from *x* to *y* is the cost of the least expensive operatoin sequence that transforms *x* to *y*. Describe a dynamic-programming algorithm that finds the edit distance from *x[1..m]* to *y[1..n]* and prints an optimal opeartion sequence. Analyze the running time and space requirements of your algorithm.
+> Given two sequences *x[1..m]* and *y[1..n]* and set of transformation-operation costs, the **_edit distance_** from *x* to *y* is the cost of the least expensive operation sequence that transforms *x* to *y*. Describe a dynamic-programming algorithm that finds the edit distance from *x[1..m]* to *y[1..n]* and prints an optimal operation sequence. Analyze the running time and space requirements of your algorithm.
 *[...]*
 > Since*twiddle* and *kill* have infinite costs, we will have neither of them in a minimal cost solution.
 > 

@@ -25,7 +25,7 @@ public class AppliedEditOperation {
 
 
     /**
-     * A valid operation applicable in the contex of the edit distance.
+     * A valid operation applicable in the context of the edit distance.
      *
      * @param editOperation                The {@link EditOperation}.
      * @param positionOfLetterInFirstWord  Position of the letter in the starting word to which the operation refers.
